@@ -1,0 +1,90 @@
+/*GLOBAL*/
+
+body {
+  font-family: Helvetica-Bold;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+p, a, li, input {
+  font-family: Georgia;
+}
+
+a:link, a:visited {
+  font-size: 16px;
+  line-height: 24px;
+  color: #DD3E18;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+:root {
+  --size-of-label: 8px;
+}
+
+.main-label {
+  background-color: #DD3E18;
+  width: var(--size-of-label, 8px);
+  height: var(--size-of-label, 8px);
+  border-radius: calc(var(--size-of-label, 8px) / 2);
+}
+
+.main-label:hover,
+input:checked + .main-label {
+  cursor: pointer;
+  background-color: black;
+}
+
+label,
+input[type='radio'] {
+  display: none;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .wrapper {
+    width: 1024px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 336px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

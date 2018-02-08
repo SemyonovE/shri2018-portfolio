@@ -1,0 +1,36 @@
+body {
+  background: url('../img/1440.png');
+  background-size: 1440px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    background: url('../img/1024.png');
+    background-size: 1024px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background: url('../img/768.png');
+    background-size: 768px;
+  }
+}
+
+@media (min-width: 336px) and (max-width: 767px) {
+  body {
+    background: url('../img/336.png');
+    background-size: 336px;
+  }
+}
+
+@media (max-width: 335px) {
+  body {
+    display: none;
+  }
+}
+
+body {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
